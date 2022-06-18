@@ -1,5 +1,5 @@
 {
-  "name": "aws-comprehend-twitch-bot test",
+  "name": "aws-comprehend-twitch-bot",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
