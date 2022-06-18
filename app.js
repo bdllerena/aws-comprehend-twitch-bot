@@ -65,7 +65,7 @@ const startBot = async function() {
       return
     }
   
-    onMessageHandler(channel, userState, message, self)
+    onMessageHandler(client,channel, userState, message, self)
   })
 
   // events
@@ -85,8 +85,8 @@ client.on('reconnect', () => {
 
 // event handlers
 
-function onMessageHandler (channel, userState, message) {
-  checkTwitchChat(userState, message, channel)
+function onMessageHandler (client, channel, userState, message) {
+  checkTwitchChat(client, userState, message, channel)
 }
 
 function onDisconnectedHandler(reason) {
@@ -101,7 +101,7 @@ function reconnectHandler () {
   console.log('Reconnecting...')
 }
 
-function checkTwitchChat(userState, message, channel) {
+function checkTwitchChat(client, userState, message, channel) {
   console.log(message)
   comprehend.detectSentiment({LanguageCode: 'en',Text: message}, function(err, data) {
       if (err) console.log(err, err.stack); // an error occurred
