@@ -1,0 +1,27 @@
+{
+  "name": "aws-comprehend-twitch-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bdllerena@github.com/bdllerena/aws-comprehend-twitch-bot.git"
+  },
+  "author": "David",
+  "dependencies": {
+    "@aws-sdk/client-comprehend": "^3.105.0",
+    "@aws-sdk/client-ssm": "^3.112.0",
+    "aws-sdk": "^2.1157.0",
+    "esm": "^3.2.25",
+    "tmi.js": "^1.5.0"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bdllerena/aws-comprehend-twitch-bot/issues"
+  },
+  "homepage": "https://github.com/bdllerena/aws-comprehend-twitch-bot#readme"
+}
